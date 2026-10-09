@@ -57,9 +57,18 @@ export default function Navbar() {
                 <div className="text-[11px] text-[#475472]">
                   Helpline · Mon–Sat, 9 AM–7 PM
                 </div>
-                <div className="font-mono font-medium text-[15px] text-[#14213D]">
-                  1800 XXX XXXX
-                </div>
+                <a
+                  href="tel:+91956001459"
+                  className="block font-mono font-medium text-[15px] text-[#14213D] hover:text-[#0B3D74] transition"
+                >
+                  +91 95600 1459
+                </a>
+                <a
+                  href="mailto:info@suvidha.services"
+                  className="block text-[11.5px] text-[#0B3D74] hover:underline"
+                >
+                  info@suvidha.services
+                </a>
               </div>
             </div>
 
@@ -334,6 +343,10 @@ export default function Navbar() {
               Sign in
             </Link>
           )}
+
+          <div className="pt-3 mt-2 border-t border-white/20 text-[12px] text-[#C3D0E2]">
+            All Suvidha rights reserved by Truzo Infotech Pvt. Ltd. © 2026
+          </div>
         </div>
       )}
     </header>

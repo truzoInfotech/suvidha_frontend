@@ -686,9 +686,17 @@ export default function HomePage() {
                   .services
                 </span>
               </div>
-              <p className="text-[14px] leading-[19.6px] text-[#C3D0E2]">
+              <p className="text-[14px] leading-[19.6px] text-[#C3D0E2] mb-3">
                 Government services, made simple. A private service provider.
               </p>
+              <div className="space-y-1 text-[13.5px] leading-[19.6px] text-[#C3D0E2]">
+                <a href="tel:+91956001459" className="block font-mono hover:text-white transition">
+                  +91 95600 1459
+                </a>
+                <a href="mailto:info@suvidha.services" className="block hover:text-white transition">
+                  info@suvidha.services
+                </a>
+              </div>
             </div>
 
             {[
@@ -733,9 +741,21 @@ export default function HomePage() {
             <p className="text-[14px] leading-[19.6px]">
               <span className="font-bold text-white">Disclaimer:</span>{' '}
               <span className="text-[#E2E9F3]">
-                Suvidha.services is owned and operated by Suvidha Services Pvt. Ltd., a private company. This is not a government website. We are not affiliated with, endorsed by, or acting on behalf of any Central or State Government department. Applications are decided only by the competent authority. Government fees are paid at actuals; our service fee is charged separately and shown before payment.
+                Suvidha.services is owned and operated by Truzo Infotech Pvt. Ltd., a private company. This is not a government website. We are not affiliated with, endorsed by, or acting on behalf of any Central or State Government department. Applications are decided only by the competent authority. Government fees are paid at actuals; our service fee is charged separately and shown before payment.
               </span>
             </p>
+          </div>
+
+          <div className="p-3 rounded border border-white/10 mb-4 flex flex-wrap items-center justify-between gap-2">
+            <span className="text-[12.5px] leading-[18.2px] text-[#C3D0E2]">
+              All Suvidha rights are reserved by Truzo Infotech Pvt. Ltd. © 2026
+            </span>
+            <a
+              href="mailto:info@suvidha.services"
+              className="text-[12.5px] leading-[18.2px] text-[#C3D0E2] hover:text-white transition"
+            >
+              info@suvidha.services
+            </a>
           </div>
 
           <div className="pt-[18px] border-t border-white/10 flex flex-wrap justify-between gap-3">
@@ -743,7 +763,7 @@ export default function HomePage() {
               © 2026 Suvidha Services Pvt. Ltd. · CIN U00000XX2026PTC000000
             </span>
             <span className="text-[13px] leading-[18.2px] text-[#C3D0E2]">
-              Last updated: 6 October 2026
+              Built by Truzo Infotech · Last updated: 6 October 2026
             </span>
           </div>
         </div>

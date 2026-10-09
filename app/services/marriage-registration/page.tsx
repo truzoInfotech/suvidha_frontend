@@ -751,8 +751,19 @@ function NeedHelpCard() {
       <p className="text-[13.5px] leading-[20px] text-[#475472] mb-3">
         Talk to our team in English or Hindi.
       </p>
-      <div className="font-mono font-medium text-[17px] text-[#14213D] mb-3">
-        1800 XXX XXXX
+      <div className="space-y-1.5 mb-3">
+        <a
+          href="tel:+91956001459"
+          className="block font-mono font-medium text-[17px] text-[#14213D] hover:text-[#0B3D74] transition"
+        >
+          +91 95600 1459
+        </a>
+        <a
+          href="mailto:info@suvidha.services"
+          className="block text-[14px] text-[#0B3D74] hover:underline"
+        >
+          info@suvidha.services
+        </a>
       </div>
       <Link
         href="/contact"
