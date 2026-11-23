@@ -144,7 +144,7 @@ export default function Navbar() {
             {user ? (
               <div className="hidden sm:flex items-center gap-3">
                 <span className="text-[14px] text-[#14213D]">
-                  Hi, <span className="font-medium">{user.name.split(' ')[0]}</span>
+                  Hi, <span className="font-medium">{user.name?.split(' ')[0] ?? 'there'}</span>
                 </span>
                 <button onClick={logout} className="text-[14px] text-[#0B3D74] font-medium hover:underline">
                   Sign out
@@ -341,7 +341,7 @@ export default function Navbar() {
                 }}
                 className="block w-full text-left py-3 px-2 text-white text-[15px] rounded hover:bg-white/10"
               >
-                Sign out ({user.name.split(' ')[0]})
+                Sign out ({user.name?.split(' ')[0] ?? ''})
               </button>
             ) : (
               <Link href="/login" onClick={() => setMobileOpen(false)} className="block py-3 px-2 text-white text-[15px] font-medium rounded hover:bg-white/10">
