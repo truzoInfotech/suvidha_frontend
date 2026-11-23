@@ -760,7 +760,7 @@ export default function HomePage() {
 
           <div className="pt-[18px] border-t border-white/10 flex flex-wrap justify-between gap-3">
             <span className="text-[13px] leading-[18.2px] text-[#C3D0E2]">
-              © 2026 Suvidha Services Pvt. Ltd. · CIN U00000XX2026PTC000000
+              © 2026 Truzo Infotech Pvt. Ltd.
             </span>
             <span className="text-[13px] leading-[18.2px] text-[#C3D0E2]">
               Built by Truzo Infotech · Last updated: 6 October 2026
