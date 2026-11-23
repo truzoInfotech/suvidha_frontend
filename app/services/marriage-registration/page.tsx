@@ -1,6 +1,8 @@
 'use client';
 
+import { useAuth } from '@/app/components/AuthProvider';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 /* ============================================================
@@ -699,6 +701,19 @@ function FaqsTab({
    SIDEBAR: FEE SUMMARY CARD
    ============================================================ */
 function FeeSummaryCard() {
+  const { user, loading } = useAuth();
+  const router = useRouter();
+  const [busy, setBusy] = useState(false);
+
+  const onStart = () => {
+    if (loading) return;
+    if (user) {
+      router.push('/apply');
+    } else {
+      router.push('/login?redirect=/apply');
+    }
+  };
+
   return (
     <div className="bg-white rounded-md border border-[#D3DAE4] border-t-4 border-t-[#0B3D74] p-6">
       <h3 className="font-bold text-[20px] leading-[28px] text-[#14213D] mb-1">
@@ -726,8 +741,13 @@ function FeeSummaryCard() {
         <span className="font-mono font-bold text-[16px] text-[#14213D]">₹ 1,768.82</span>
       </div>
 
-      <button className="mt-5 w-full inline-flex items-center justify-center gap-2 px-5 py-3 bg-[#0B3D74] text-white rounded font-medium text-[14px] hover:bg-[#092f5a] transition">
-        Start application
+      <button
+        type="button"
+        onClick={onStart}
+        disabled={busy || loading}
+        className="mt-5 w-full inline-flex items-center justify-center gap-2 px-5 py-3 bg-[#0B3D74] text-white rounded font-medium text-[14px] hover:bg-[#092f5a] transition disabled:opacity-60"
+      >
+        {user ? 'Start application' : 'Sign in to apply'}
         <IconArrowRight className="w-4 h-4" />
       </button>
 

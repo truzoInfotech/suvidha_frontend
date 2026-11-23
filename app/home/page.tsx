@@ -690,8 +690,8 @@ export default function HomePage() {
                 Government services, made simple. A private service provider.
               </p>
               <div className="space-y-1 text-[13.5px] leading-[19.6px] text-[#C3D0E2]">
-                <a href="tel:+91956001459" className="block font-mono hover:text-white transition">
-                  +91 95600 1459
+                <a href="tel:+919560001486" className="block font-mono hover:text-white transition">
+                  +91 956000 1486
                 </a>
                 <a href="mailto:info@suvidha.services" className="block hover:text-white transition">
                   info@suvidha.services

@@ -22,7 +22,8 @@ export default function SignupPage() {
     try {
       await authApi.signup({ name, email, password });
       await refresh();
-      router.push('/');
+      // ✅ CHANGED: Redirect to /account after signup
+      router.push('/account');
       router.refresh();
     } catch (err: any) {
       setError(err.message || 'Signup failed');
